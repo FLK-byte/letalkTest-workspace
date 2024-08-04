@@ -1,6 +1,6 @@
-[submodule "letalk-front"]
-	path = letalk-front
-	url = https://github.com/FLK-byte/letalkTest-front.git
-[submodule "letalk-back"]
-	path = letalk-back
-	url = https://github.com/FLK-byte/letalkTest-back.git
+[submodule "letalkTest-front"]
+	path = letalkTest-front
+	url = https://github.com/FLK-byte/letalkTest-front
+[submodule "letalkTest-back"]
+	path = letalkTest-back
+	url = https://github.com/FLK-byte/letalkTest-back
