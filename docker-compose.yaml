@@ -1,21 +1,23 @@
 version: '3'
 services:
   back:
-    image: "node:20.11.1"
+    build:
+      context: .
+      dockerfile: ./letalkTest-back/Dockerfile
     container_name: "letalkBack"
     volumes:
-      - ./back:/app
+      - ./letalkTest-back:/app
     working_dir: /app
     ports: 
       - 3000:3000
-    command: sh -cx "yarn & yarn start:dev"
 
   front:
-    image: "node:20.11.1"
+    build:
+      context: .
+      dockerfile: ./letalkTest-front/Dockerfile
     container_name: "letalkFront"
     volumes:
-      - ./front:/app
+      - ./letalkTest-front:/app
     working_dir: /app
     ports: 
       - 3001:3001
-    command: sh -cx "yarn & yarn dev"
