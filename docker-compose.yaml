@@ -16,6 +16,8 @@ services:
       context: .
       dockerfile: ./letalkTest-front/Dockerfile
     container_name: "letalkFront"
+    environment:
+      - VITE_BASE_URL=http://localhost:3000
     volumes:
       - ./letalkTest-front:/app
     working_dir: /app
